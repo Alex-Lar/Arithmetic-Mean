@@ -25,4 +25,11 @@ h1 {
 
     color: #fff;
     background-color: rgb(129, 0, 204);
+
+    cursor: pointer;
+    transition: background-color .2s linear;
+}
+
+#btn:hover {
+    background-color: rgb(99, 0, 156);
 }
