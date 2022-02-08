@@ -1,0 +1,28 @@
+body {
+    padding: 8vh;
+    text-align: center;
+
+    background-color: rgb(42, 42, 42);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 45px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#btn {
+    font-size: 26px;
+
+    padding: 10px 35px;
+    margin-top: 25vh;
+    border: none;
+    border-radius: .2em;
+
+    color: #fff;
+    background-color: rgb(129, 0, 204);
+}
