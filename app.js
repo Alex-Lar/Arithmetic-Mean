@@ -1,29 +1,27 @@
 "use strict";
 
-//Инициализация переменных
 let startBtn = document.querySelector('#btn');
 
 
-
+//Запуск программы
 startBtn.addEventListener('click', function () {
     let totalNum = totalNumOfDigits();
 
-
-
-    alert(totalNum);
+    findAverage(totalNum);
 });
 
 
+//Получение значений от пользователя 
 function totalNumOfDigits(num) {
     //Итератор для определения количества запросов для total
-    num = parseInt(prompt('Введите общее количество чисел.', ''));
+    num = +prompt('Введите общее количество чисел.', '');
 
     let total = [],
         eachNumber;
 
     //Цикл с вводом чисел пользователем
     for (let i = 0; i < num; i++) {
-        eachNumber = parseInt(prompt(`Введите ${i + 1}-${declension(i + 1)} число:`));
+        eachNumber = +prompt(`Введите ${i + 1}-${declension(i + 1)} число:`);
         total.push(eachNumber);
     }
 
@@ -31,11 +29,25 @@ function totalNumOfDigits(num) {
 }
 
 
+//Нахождение среднего арифметического
+function findAverage(nums) {
+    let sumOfNums = nums.reduce((total, number) => {
+        return total += number;
+    });
+    alert(nums);
+    alert(sumOfNums);
+    sumOfNums = sumOfNums / nums.length;
+
+    alert(`Среднее арифметическое этих чисел - ${sumOfNums}`);
+}
+
+
+
 //Определяет какое склонение выбрать
 //Работает до 23 чисел. Пока что.
 function declension(el) {
     if (el === 3 || el === 23) {
         return 'е';
-    } 
+    }
     return 'ое';
 }
