@@ -34,8 +34,7 @@ function findAverage(nums) {
     let sumOfNums = nums.reduce((total, number) => {
         return total += number;
     });
-    alert(nums);
-    alert(sumOfNums);
+    
     sumOfNums = sumOfNums / nums.length;
 
     alert(`Среднее арифметическое этих чисел - ${sumOfNums}`);
