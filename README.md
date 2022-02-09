@@ -13,7 +13,7 @@
 
 
 ## Description
-<h1 align="center"></h1>
+
 
 This is a program that will allow you to quickly find the arithmetic mean.
 
@@ -26,8 +26,6 @@ Arithmetic mean is the sum of a collection of numbers divided by the count of nu
 
 
 ## How to use
-<h1 align="center"></h1>
-
 
  - To start working with the program, you need to click on the "get started" button 
 
