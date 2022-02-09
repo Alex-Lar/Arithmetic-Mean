@@ -5,7 +5,7 @@
 
 <h2 align="center">
 
-[Live Demo](http://example.com)
+[Live Demo](https://alex-lar.github.io/Arithmetic-Mean/)
 
 </h2>
 
